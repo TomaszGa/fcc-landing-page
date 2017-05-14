@@ -2,8 +2,14 @@
 
 html {
   box-sizing: border-box;
+  font-family: "Roboto", helvetica, arial;
 }
-
+button{
+  border: none;
+}
+input{
+  padding: 0.5rem;
+}
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -27,17 +33,15 @@ html {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
-  background-color: navy;
-  border-radius: 100%
+  font-size: 4rem;
 }
-
 .primary-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #999;
+  background: lightgrey;
+  font-weight: 900;
 }
-
 .primary-nav ul {
   list-style-type: none;
   -webkit-box-flex: 0;
@@ -45,7 +49,9 @@ html {
   flex: 0 0 50%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
 .primary-nav a {
@@ -63,7 +69,10 @@ html {
   text-transform: uppercase;
   background: #e6cb0c;
   width: 15%;
+  height: 2rem;
   margin-top: 1rem;
+  border-radius: 5px;
+  font-weight: 900;
 }
 
 .hero {
@@ -77,8 +86,16 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
+  margin-top: 2rem;
+/*  background: url("img/bicycle.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;*/
+  height: 480px;
 
+}
+.hero h1{
+  font-weight: 900;
+}
 section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
