@@ -1,3 +1,11 @@
 html {
   box-sizing: border-box;
 }
+.flex-container{
+	display: flex;
+	background-color: red;
+}
+
+.space-between {
+	justify-content: space-between;
+}
