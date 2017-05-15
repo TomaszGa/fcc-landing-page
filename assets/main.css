@@ -34,6 +34,7 @@ input{
   -ms-flex: 0 0 20%;
   flex: 0 0 20%;
   font-size: 4rem;
+
 }
 .primary-nav {
   display: -webkit-box;
@@ -76,9 +77,7 @@ input{
 }
 
 .hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 3rem auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -86,19 +85,42 @@ input{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 2rem;
 /*  background: url("img/bicycle.jpg") center center;
   background-size: cover;
   background-repeat: no-repeat;*/
-  height: 480px;
-
 }
 .hero h1{
   font-weight: 900;
+}
+.hero-content{
+  margin: 0 auto;
+  text-align: center;  
 }
 section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.main-info{
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 70%;
+  align-content: space-around;
+}
+.main-info i{
+  display: inline-block;
+  width: 6rem;
+  font-size: 5rem;
+  text-align: center;
+  color: #e6cb0c;   
+  margin-right: 1rem;
+}
+.main-info h2{
+  margin-bottom: -20px;
+}
+.main-info p{
 
+}
+.textbox{
+  flex-basis: 80%;
+}
