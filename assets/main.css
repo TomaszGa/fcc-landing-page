@@ -112,3 +112,12 @@ html {
 .info-description p {
   margin: 0;
 }
+.vid-title{
+  text-align: center;
+  margin-top: 3rem;
+}
+.vid-embed{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
