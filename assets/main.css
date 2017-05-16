@@ -121,3 +121,38 @@ html {
   justify-content: center;
   margin-top: 1rem;
 }
+
+/****** Footer ******/
+.main-footer{
+  display: flex;
+  flex: 0 0 50%;
+  justify-content: flex-end;
+  align-items: center;
+  background: lightgrey;
+  height: 15vh;
+  margin-top: 3rem;  
+}
+.footer-content{
+  flex-basis: 30%;
+}
+.main-footer ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+
+}
+.main-footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-footer a:hover {
+  color: #fff;
+}
+.main-footer p{
+  margin: 0;
+  font-size: 0.85rem;
+  text-align: center;
+}
