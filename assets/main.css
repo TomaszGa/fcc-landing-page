@@ -4,55 +4,38 @@ html {
   box-sizing: border-box;
   font-family: "Roboto", helvetica, arial;
 }
-button{
-  border: none;
-}
-input{
-  padding: 0.5rem;
-}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
 }
 
-.flex-container{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}
-
-.space-between {
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-}
 
 /***** Header Styles *****/
 
-.logo {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 20%;
-  flex: 0 0 20%;
-  font-size: 4rem;
-
-}
 .primary-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   background: lightgrey;
   font-weight: 900;
 }
+
+.logo {
+  flex: 0 0 20%;
+  text-align: center;
+}
+
+.logo i {
+  font-size: 4rem;
+}
+
 .primary-nav ul {
-  list-style-type: none;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 50%;
+  display: flex;
   flex: 0 0 50%;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-around;
-  align-content: center;
   align-items: center;
+  list-style-type: none;
+  padding: 0;
 }
 
 .primary-nav a {
@@ -64,63 +47,68 @@ input{
   color: #fff;
 }
 
+
 /***** Main section *****/
 
-.btn {
+.hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("img/bicycle.jpg") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  color: #ccba3e;
   text-transform: uppercase;
-  background: #e6cb0c;
-  width: 15%;
-  height: 2rem;
-  margin-top: 1rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+
+.hero input {
+  padding: 0.5rem;
+}
+
+.hero button {
+  width: 100px;
+  border: none;
+  text-transform: uppercase;
+  background: #ccba3e;
   border-radius: 5px;
   font-weight: 900;
+  margin-top: 1rem;
 }
 
-.hero {
-  margin: 3rem auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-/*  background: url("img/bicycle.jpg") center center;
-  background-size: cover;
-  background-repeat: no-repeat;*/
-}
-.hero h1{
-  font-weight: 900;
-}
-.hero-content{
-  margin: 0 auto;
-  text-align: center;  
-}
-section {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-.main-info{
-  margin: 0 auto;
+.info {
+  display: flex;
   margin-top: 4rem;
-  width: 70%;
-  align-content: space-around;
 }
-.main-info i{
-  display: inline-block;
-  width: 6rem;
-  font-size: 5rem;
-  text-align: center;
-  color: #e6cb0c;   
-  margin-right: 1rem;
-}
-.main-info h2{
-  margin-bottom: -20px;
-}
-.main-info p{
 
+.info-icon {
+  flex: 0 0 20%;
+  text-align: center;
 }
-.textbox{
-  flex-basis: 80%;
+
+.info-icon i {
+  font-size: 5rem;
+  color: #ccba3e;
+}
+
+.info-description {
+  flex: 0 0 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-description h2 {
+  margin: 0;
+}
+
+.info-description p {
+  margin: 0;
 }
