@@ -57,7 +57,6 @@ button {
   color: #fff;
 }
 
-
 /***** Main section *****/
 
 .hero {
@@ -161,6 +160,7 @@ button {
 }
 
 /****** Footer ******/
+
 .main-footer{
   display: flex;
   flex: 0 0 50%;
@@ -168,7 +168,7 @@ button {
   align-items: center;
   background: lightgrey;
   height: 15vh;
-  margin-top: 3rem;  
+  margin-top: 3rem;
 }
 .footer-content{
   flex-basis: 30%;
