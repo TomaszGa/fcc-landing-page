@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Landing Page</title>
   <script src="https://use.fontawesome.com/963d3bb904.js"></script>
+  <link rel="stylesheet" href="assets/animate.css">  
   <link rel="stylesheet" type="text/css" href="assets/main.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
 </head>
@@ -12,7 +13,7 @@
 <body>
   <div class="container">
     <header>
-      <nav class="primary-nav">
+      <nav class="primary-nav hidden">
         <div class="logo">
           <i class="fa fa-bicycle" aria-hidden="true"></i>
         </div>
@@ -24,13 +25,13 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero hidden">
         <h1>Handcrafted, home-made bicycles</h1>
         <input type="text" placeholder="Enter your E-Mail address"><br>
         <button>Get started</button>
       </section>
 
-      <section class="info">
+      <section class="info info1 hidden">
         <div class="info-icon">
           <i class="fa fa-bicycle" aria-hidden="true"></i>
         </div>
@@ -39,7 +40,7 @@
           <p>Tests confirm that our bicycles can be up to 3 times faster than other bicycles.</p>
         </div>
       </section>
-      <section class="info">
+      <section class="info info2 hidden">
         <div class="info-icon">
           <i class="fa fa-bus" aria-hidden="true"></i>
         </div>
@@ -48,7 +49,7 @@
           <p>Why would you ever get on a bus again?</p>
         </div>
       </section>
-      <section class="info">
+      <section class="info info3 hidden">
         <div class="info-icon">
           <i class="fa fa-money" aria-hidden="true"></i>
         </div>
@@ -57,14 +58,14 @@
           <p>You are not getting a cheaper bike anywhere, it's just not possible</p>
         </div>
       </section>
-      <section>
+      <section class="vid-section hidden">
         <h3 class="vid-title">See one of our bicycles in action:</h3>
         <div class="vid-embed">
           <iframe width="420" height="315" src="https://www.youtube.com/embed/lSk09oXHfeA?autoplay=0?controls=0&showinfo=0" frameborder="0"></iframe>
         </div>
       </section>
       <section class="proposal">
-        <div>
+        <div class="proposal-left hidden">
           <h3>Bike 1</h3>
           <p class="price">800$</p>
           <p>lorem</p>
@@ -73,7 +74,7 @@
           <p>lorem</p>
           <button>Select</button>
         </div>
-        <div>
+        <div class="proposal-center hidden">
           <h3>Bike 2</h3>
           <p class="price">1200$</p>
           <p>lorem</p>
@@ -82,7 +83,7 @@
           <p>lorem</p>
           <button>Select</button>
         </div>
-        <div>
+        <div class="proposal-right hidden">
           <h3>Bike 3</h3>
           <p class="price">1600$</p>
           <p>lorem</p>
@@ -94,7 +95,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer hidden" id="footer">
       <div class="footer-content">
         <ul>
           <li><a href="#">Privacy</a></li>
@@ -105,6 +106,11 @@
       </div>
     </footer>
   </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="assets/js/jquery.visible.min.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
