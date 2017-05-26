@@ -4,7 +4,6 @@ $(document).ready(function(){
 	//reference to animation elements and window
 	const $animationElements = $(".animation-element");
 	const $window = $(window);
-
 	//trigger on document load and every window scroll	
 	pageAnimations.checkVisibility($animationElements);
 	$window.scroll(function(){

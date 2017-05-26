@@ -2,35 +2,53 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Roboto", helvetica, arial;
+  font-family: "Open Sans", helvetica, arial;
 }
-
+body{
+  margin: 0;
+}
 .container {
-  max-width: 960px;
   margin: 0 auto;
 }
 .hidden{
   visibility: hidden;
 }
-
+input{
+  border: 1px solid #222;
+}
 button {
   width: 120px;
   border: none;
   text-transform: uppercase;
-  background: #ccba3e;
-  border-radius: 5px;
+  background: white;
+  border-radius: 0px;
+  border: 1px solid #222;
   font-weight: 900;
   margin-top: 1rem;
   padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Montserrat Subrayada";
+
 }
+
+.fadeIn, .fadeInRight, .fadeInLeft, .fadeInUp{
+  animation-duration: 3s;
+}
+
 
 /***** Header Styles *****/
 
 .primary-nav {
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+  margin-top: 0;
   display: flex;
   justify-content: space-between;
-  background: lightgrey;
+  background: white;
   font-weight: 900;
+  border-bottom: 1px solid #222;
+  z-index: 1;
 }
 
 .logo {
@@ -39,7 +57,7 @@ button {
 }
 
 .logo i {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .primary-nav ul {
@@ -49,46 +67,71 @@ button {
   align-items: center;
   list-style-type: none;
   padding: 0;
+  text-transform: uppercase;
+  font-weight: 800;
 }
-
+@media only screen and (max-width: 600px) {
+    .primary-nav ul {
+      flex: 0 0 80%;
+    }
+}
 .primary-nav a {
   text-decoration: none;
-  color: #000;
+  color: #222;
 }
 
 .primary-nav a:hover {
-  color: #fff;
+  color: #222;
 }
 
 /***** Main section *****/
 
 .hero {
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url("img/bicycle.jpg") center center;
+  height: 100vh;
+
+  background: url("img/bicycle2.jpg")bottom;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 .hero h1 {
-  color: #ccba3e;
+  color: #222;
+  font-family: "Montserrat Subrayada";
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-top: 4rem;
 }
 
 .hero input {
   padding: 0.5rem;
 }
-
+.hero-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  background-color: rgba(255,255,255,0.4);
+  text-align: center;
+}
 .info {
   display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto;
   margin-top: 4rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .info {
+      width: 100%;
+    }
+}
+
 
 .info-icon {
   flex: 0 0 20%;
@@ -97,7 +140,7 @@ button {
 
 .info-icon i {
   font-size: 5rem;
-  color: #ccba3e;
+  color: #222;
 }
 
 .info-description {
@@ -113,24 +156,32 @@ button {
 
 .proposal {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 2rem;
 }
 
 .proposal div {
   flex: 0 0 30%;
   height: 300px;
-  border: 1px solid #000;
+}
+@media only screen and (max-width: 600px) {
+    .proposal div {
+        flex: 0 0 80%;
+        margin: 1.5rem 0;
+    }
 }
 
+.proposal-alternate{
+  background-color: #222;
+  color: white;
+}
 .proposal h3 {
   height: 40px;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
-  background: #ccc;
   margin: 0;
-  /*try positioning h3 with CSS */
   padding-top: 0.5rem;
 }
 
@@ -169,7 +220,7 @@ button {
   flex: 0 0 50%;
   justify-content: flex-end;
   align-items: center;
-  background: lightgrey;
+  background: #222;
   height: 15vh;
   margin-top: 3rem;
 }
@@ -186,7 +237,7 @@ button {
 }
 .main-footer a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .main-footer a:hover {
@@ -194,6 +245,17 @@ button {
 }
 .main-footer p{
   margin: 0;
+  margin-right: 1rem;
   font-size: 0.85rem;
-  text-align: center;
+  text-align: right;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-content{
+      flex-basis: 50%;
+    }
+    .main-footer p {
+      margin-right: 0.3rem;
+    }
 }
